@@ -15,7 +15,7 @@ const host = process.env.HOST ?? "0.0.0.0";
 app.use(cors());
 app.use(express.json());
 
-app.get("/health", (_req, res) => {
+app.get("/health", (_req: Request, res: Response) => {
   const isDbConnected = AppDataSource.isInitialized;
   res.status(isDbConnected ? 200 : 503).json({
     ok: isDbConnected,
@@ -25,7 +25,7 @@ app.get("/health", (_req, res) => {
 
 app.use("/api", registerRoutes());
 
-app.use((_req, _res, next) => {
+app.use((_req: Request, _res: Response, next: NextFunction) => {
   next(new ApiError(404, "NOT_FOUND", "Route not found"));
 });
 

@@ -13,6 +13,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/axios": "^0.14.4",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.6.0",
+    "@types/scrypt": "^6.0.3",
+    "@types/ws": "^8.18.1",
     "axios": "^1.15.2",
     "bcrypt": "^6.0.0",
     "concurrently": "^9.2.1",
@@ -25,20 +33,12 @@
     "reflect-metadata": "^0.2.2",
     "scrypt": "^6.0.3",
     "typeorm": "^0.3.28",
+    "typescript": "^6.0.3",
     "winston": "^3.19.0",
     "ws": "^8.20.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@types/axios": "^0.14.4",
-    "@types/bcrypt": "^6.0.0",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^25.6.0",
-    "@types/scrypt": "^6.0.3",
-    "@types/ws": "^8.18.1",
-    "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "tsx": "^4.21.0"
   }
 }
